@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #232F3B;
+        }
+      .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .box {
+        width: 500px;
+        height: 500px;
+      }
+      input {
+        width: 70%;
+        float: left;
+      }
+      button {
+        width: 30%;
+        float: left;
+        font-weight: bold;
+        border: #6d195b 3px solid;
+        font-size: larger;
+      }
+      input{
+          width: calc(70% - 15px);
+          font-size: larger;
+          background-color: #dbe8f5 ;
+          border: #6d195b 3px solid;
+      }
+      .reg{
+          position: absolute;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        color: #ffe2fa;
+      }
+      h1{
+          color: #ddd0da;
+          text-align: center;
+      }
+      h3{
+          color: #5063d1;
+      }
+    </style>
+
+    <script>
+        function dl(){
+            var inp = document.getElementById("inp").value;
+            var url = "https://cyberkongz.fra1.cdn.digitaloceanspaces.com/public/"+inp+"/"+inp+".glb"
+            window.open(url)
+        }
+    </script>
+
+  </head>
+  <body>
+      <div class="center">
+    <div class="box">
+        <h1>FREE MONKEY GENARATOR</h1>
+      <input id="inp" type="text" placeholder="Kong ID" />
+      <button onclick="dl()">DOWNLOAD</button>
+      <h3>ID: 1-15000 </h3>
+    </div>
+</div>
+<div class="reg">
+    Tim Nahtigal
+</div>
+  </body>
+</html>
+
